@@ -56,17 +56,12 @@
     </div>
     
     
-     
-   
+     <!--用php方式引入require。js 模块化的插件，和插件的配置文件-->
     <?php include "/views/public/js.html" ?>
 
     <script>
+        // 模块化导入当前页面的代码  注意 模块化的引入代码的路径
         require(["static/js/common"]);
-
-
-
-
-
     </script>
 </body>
 </html>
