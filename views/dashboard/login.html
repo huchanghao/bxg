@@ -29,25 +29,10 @@
             </form>
         </div>
     </div>
-    
-     <?php include "/views/public/js.html" ?>
+  
+    <?php include "/views/public/js.html" ?>
      <script>
-        $("#inform").submit(function(){
-            $(this).ajaxSubmit({
-                url:"/api/login",
-                type:"post",
-                success:function(data){
-                    $.cookie("inform",JSON.stringify(data.result),{
-                        path:"/"
-                    });
-                    // console.log(data.result)
-                    // console.log(data)
-                    location.href="http://www.studyit.com/";
-                }
-            })
-            return false;
-        })
-      
+            require(["static/js/dashboard/login"]);
      </script>
 </body>
 </html>
